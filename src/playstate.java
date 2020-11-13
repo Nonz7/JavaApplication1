@@ -180,12 +180,7 @@ public class playstate extends JPanel implements ActionListener{
                 g.drawImage(tn.imgg, tn.x, tn.y-120,250,250, this); 
             
   
-                for(int i=0 ; i<fish.size();i++){
-                g.drawImage(fish.get(i).getImage(),fish.get(i).getX(),fish.get(i).getY(),100,100,this);
- 		}
-                for(int i=0 ; i<fishh.size();i++){
-                g.drawImage(fishh.get(i).getImage(),fishh.get(i).getX(),fishh.get(i).getY(),300,300,this);
- 		}
+
                 for(int i=0;i<harpoon.size();i++){
 		    harpoon ba = harpoon.get(i);
                     g.drawImage(ba.imfire.getImage(), ba.x, ba.y,50,50, null);
@@ -210,6 +205,9 @@ public class playstate extends JPanel implements ActionListener{
 		    }
 		}
 		//========================shark=========================
+                for(int i=0 ; i<fishh.size();i++){
+                    g.drawImage(fishh.get(i).getImage(),fishh.get(i).getX(),fishh.get(i).getY(),300,300,this);
+ 		}                
 		for(int i=0 ; i<harpoon.size();i++){
 		    for(int j=0 ; j<fishh.size();j++){
 		    	if(Intersect(harpoon.get(i).getbound(),fishh.get(j).getbound())){
