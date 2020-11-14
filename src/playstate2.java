@@ -22,7 +22,7 @@ public class playstate2 extends JPanel implements ActionListener{
 	
 
 	ImageIcon feildover = new ImageIcon(this.getClass().getResource("fish2.jpg"));
-	ImageIcon exitover = new ImageIcon(this.getClass().getResource("exit.jpg"));
+	
 	
         JButton BExit  = new JButton("EXIT");
         
@@ -191,6 +191,7 @@ public class playstate2 extends JPanel implements ActionListener{
 			    }
 			}
                     }
+                    @Override
                     public void keyReleased(KeyEvent e){
                         tn.count=0;
 		    }
